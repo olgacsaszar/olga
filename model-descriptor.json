@@ -1,0 +1,101 @@
+{
+    "mdVersion": "0.0.5",
+    "name": "OLGA",
+    "description": "First model descriptor",
+    "version": "1.0.4",
+    "documentation": "https://https://github.com/olgacsaszar/olga",
+    "dependencies": [
+        {
+            "name": "IRIS Toolbox",
+            "version": "2.9.2",
+            "localpath": "iris-toolbox",
+            "location": "https://gitlab.sofa.dev/perform/libraries/ogr/iris-toolbox.git"
+        },
+        {
+            "name": "DataCare",
+            "version": "0.3.0",
+            "localpath": "datacare",
+            "location": "https://gitlab.sofa.dev/perform/libraries/ogr/datacare.git"
+        },
+        {
+            "name": "ecb-matlab-utils",
+            "version": "1.3.6",
+            "localpath": "ecb-matlab-utils",
+            "location": "https://gitlab.sofa.dev/perform/libraries/ecb/ecb-matlab-utils.git"
+        }
+    ],
+    "wrapperName": "runModel_performOracle",
+    "entryPoints": [
+        {
+            "name": "all",
+            "description": "",
+            "path": "main",
+            "input": {
+                "any": {
+                    "groups": [
+                        "inputXdata"
+                    ],
+                    "parameters": [
+                    ]
+                },
+                "bmpe": {},
+                "mpe": {}
+            },
+            "output": {
+                "any": {
+                    "groups": [
+                        "output"
+                    ],
+                    "parameters": [
+                        "logbook"
+                    ]
+                },
+                "bmpe": {},
+                "mpe": {}
+            },
+            "mappingCodes": [],
+            "seriesKeyParameters": [
+                "$exOutput",
+                "$itOutput"
+            ]
+        }
+    ],
+    "groups": {
+        "inputXdata": [
+            {
+                "variable": "X_1",
+                "freq": "D"
+            },
+            {
+                "variable": "X_2",
+                "freq": "D"
+            },
+            {
+                "variable": "X_3",
+                "freq": "D"
+            },
+            {
+                "variable": "X_4",
+                "freq": "D"
+            }
+        ],
+        "output": [
+            {
+                "variable": "Y_1",
+                "freq": "D"
+            },
+            {
+                "variable": "Y_2",
+                "freq": "D"
+            },
+            {
+                "variable": "Y_3",
+                "freq": "D"
+            }
+        ]
+    },
+    "parameters": {
+    },
+    "parameterTypes": {
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "variableMapping": {
+        "sources": [
+            {
+                "type": "PERFORM",
+                "mapping": {
+                    "common": {
+                        "input": [
+                            {
+                                "variable": "X_1",
+                                "skey": "Random.data.x1"
+                            },
+                            {
+                                "variable": "X_2",
+                                "skey": "Random.data.x2"
+                            },
+                            {
+                                "variable": "X_3",
+                                "skey": "Random.data.x3"
+                            },
+                            {
+                                "variable": "X_4",
+                                "skey": "Random.data.x4"
+                            }
+                        ],
+                        "output": [
+                            {
+                                "variable": "Y_1",
+                                "skey": "EXT.$itOutput.$exOutput.D.JP.BETA0",
+                                "skeyAlt": []
+                            },
+                            {
+                                "variable": "Y_2",
+                                "skey": "EXT.$itOutput.$exOutput.D.JP.BETA1",
+                                "skeyAlt": []
+                            },
+                            {
+                                "variable": "Y_3",
+                                "skey": "EXT.$itOutput.$exOutput.D.JP.BETA2",
+                                "skeyAlt": []
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "performMapping": [
+        {
+            "column_name": "SKEY",
+            "dataset_field_name": "skey",
+            "dataset_field_type": "cell"
+        },
+        {
+            "column_name": "DIM_PERIOD_SDMX",
+            "dataset_field_name": "sdmxPeriod",
+            "dataset_field_type": "cell"
+        },
+        {
+            "column_name": "OBS_VALUE",
+            "dataset_field_name": "observations",
+            "dataset_field_type": "array"
+        }
+    ],
+    "editableParameters": [
+    ]
+}

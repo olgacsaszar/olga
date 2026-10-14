@@ -36,6 +36,8 @@
                         "inputXdata"
                     ],
                     "parameters": [
+                        "start_date",
+                        "end_date"
                     ]
                 },
                 "bmpe": {},
@@ -64,38 +66,61 @@
         "inputXdata": [
             {
                 "variable": "X_1",
-                "freq": "D"
+                "freq": "Q"
             },
             {
                 "variable": "X_2",
-                "freq": "D"
+                "freq": "Q"
             },
             {
                 "variable": "X_3",
-                "freq": "D"
+                "freq": "Q"
             },
             {
                 "variable": "X_4",
-                "freq": "D"
+                "freq": "Q"
             }
         ],
         "output": [
             {
                 "variable": "Y_1",
-                "freq": "D"
+                "freq": "Q"
             },
             {
                 "variable": "Y_2",
-                "freq": "D"
+                "freq": "Q"
             },
             {
                 "variable": "Y_3",
-                "freq": "D"
+                "freq": "Q"
             }
         ]
     },
     "parameters": {
+        "start_date": "YYYY-MM-DD",
+        "end_date": "YYYY-MM-DD",
+        "seriesKeyParameters": [
+            {
+                "label": "Output exercise",
+                "name": "$exOutput",
+                "value": "#C"
+            },
+            {
+                "label": "Output iteration",
+                "name": "$itOutput",
+                "value": "#I"
+            }
+        ]
     },
     "parameterTypes": {
+        "start_date": {
+            "type": "string",
+            "format": "date"
+        },
+        "end_date": {
+            "type": "string",
+            "format": "date",
+            "required": false
+        }
     }
 }
